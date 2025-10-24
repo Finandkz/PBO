@@ -3,9 +3,21 @@
 class luaslingkaran {
     public const phi =  3.14;
     public int $jari;
+    public function __construct($isiJari = 1){
+        $this->jari=$isiJari
+    }
+    public function tampil($nama = 'bola') {
+       $rumus = luaslingkaran::phi * $this->jari * $this->jari;
+echo "Lingkaran $nama hasilnya adalah :". $rumus;
+ 
+    }
+    public static function testing(){
+        echo"<br>";
+        echo"ini dari static";
+    }
 }
 
-$lingkaran = new luaslingkaran();
-$lingkaran->jari = 10;
-$rumus = luaslingkaran::phi * $lingkaran->jari * $lingkaran->jari;
-echo "hasilnya adalah: ". $rumus;
+$lingkaran = new luaslingkaran(10);
+$lingkaran->tampil();
+luaslingkaran::testing();
+?>
