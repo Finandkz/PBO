@@ -14,6 +14,7 @@ class luaslingkaran {
 }
 
 $lingkaran = new luaslingkaran(10);
+$lingkaran->tampil();
 luaslingkaran::testing()
 
 ?>
