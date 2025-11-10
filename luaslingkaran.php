@@ -13,7 +13,7 @@ namespace App\Math; //pasang namespace
 
         public function __destruct() {
             echo "<br>";
-            echo "Au ah cape mau beli truk";
+            echo "Au ah cape mau bobo";
         }
 
         public function tampil($nama = 'ban') {
